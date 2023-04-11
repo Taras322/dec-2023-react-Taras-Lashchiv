@@ -1,13 +1,13 @@
-const Rick = ({items}) => {
+const Rick = ({info}) => {
    return (
        <div>
-           <img src={items.image}/>
-           <h2>{items.id}</h2>
-           <h2>Name is - {items.name}</h2>
-           <h2>Status - {items.status}</h2>
-           <h2>Species - {items.species}</h2>
-           <h2>Type - {items.type}</h2>
-           <h2>Gender - {items.gender}</h2>
+           <img src={info.image} alt=''/>
+           <h2>{info.id}</h2>
+           <h2>Name is - {info.name}</h2>
+           <h2>Status - {info.status}</h2>
+           <h2>Species - {info.species}</h2>
+           <h2>Type - {info.type}</h2>
+           <h2>Gender - {info.gender}</h2>
        </div>
 
    )

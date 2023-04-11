@@ -1,11 +1,11 @@
 import Rick from "../Rick";
-import {ricks} from "../../helpers/constants";
+import {ricksData} from "../../helpers/constants";
 
 const Ricks = () => {
     return (
         <div>
             {
-                ricks.map((value,index) => (<Rick items={value} key={index}/>))
+                ricksData.map((rick,index) => (<Rick info={rick} key={index}/>))
             }
         </div>
     )

@@ -1,11 +1,11 @@
 import Simpson from "../Simpson";
-import {simpsons} from "../../helpers/constants";
+import {simpsonsData} from "../../helpers/constants";
 
 const Simpsons = () => {
     return (
         <div>
             {
-                simpsons.map((simpson, index) => (<Simpson info={simpson} key={index}/>))
+                simpsonsData.map((simpson, index) => (<Simpson info={simpson} key={index}/>))
             }
         </div>
     )

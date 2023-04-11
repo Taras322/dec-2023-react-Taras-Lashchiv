@@ -1,4 +1,4 @@
-export const ricks = [
+export const ricksData = [
     {
         id: 148,
         name: "Goddess Beth",
@@ -54,7 +54,7 @@ export const ricks = [
         image:"https://rickandmortyapi.com/api/character/avatar/728.jpeg"
     }
 ];
-export const simpsons = [
+export const simpsonsData = [
     {
         name: 'Bart',
         surname: 'Simpson',
