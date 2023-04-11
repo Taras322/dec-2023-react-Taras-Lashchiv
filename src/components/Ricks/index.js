@@ -1,5 +1,7 @@
-import Rick from "../Rick/Rick";
-function Ricks({ricks}) {
+import Rick from "../Rick";
+import {ricks} from "../../helpers/constants";
+
+const Ricks = () => {
     return (
         <div>
             {
