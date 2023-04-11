@@ -1,5 +1,8 @@
 import './App.css';
 import Simpsons from "./components/simpsons/Simpsons";
+import Ricks from "./components/Ricks/Ricks";
+
+// 1. Описати всю сім'ю сімпсонів (5 персонажів)
 export let simpsons = [
     {
         name: 'Bart',
@@ -41,7 +44,69 @@ function App() {
   return (
     <div>
         <Simpsons simpsons={simpsons}/>
+        <Ricks ricks={ricks}/>
     </div>
   );
 }
+export let ricks = [
+    {
+        id: 148,
+        name: "Goddess Beth",
+        status: "unknown",
+        species: "Mythological Creature",
+        type: "Goddess",
+        gender: "Female",
+        image:"https://rickandmortyapi.com/api/character/avatar/148.jpeg"
+    },
+    {
+        id: 375,
+        name: "Vance Maximus",
+        status: "Dead",
+        species: "Human",
+        type: "none",
+        gender: "Male",
+        image:"https://rickandmortyapi.com/api/character/avatar/375.jpeg"
+    },
+    {
+        id: 459,
+        name: "Butthole Ice Cream Guy",
+        status: "Alive",
+        species: "Alien",
+        type: "none",
+        gender: "Male",
+        image:"https://rickandmortyapi.com/api/character/avatar/459.jpeg"
+    },
+    {
+        id: 226,
+        name: "Million Ants",
+        status: "Dead",
+        species: "Animal",
+        type: "Sentient ant colony",
+        gender: "Male",
+        image:"https://rickandmortyapi.com/api/character/avatar/226.jpeg"
+    },
+    {
+        id: 458,
+        name: "Tax Attorney",
+        status: "unknown",
+        species: "Human",
+        type: "none",
+        gender: "Male",
+        image:"https://rickandmortyapi.com/api/character/avatar/458.jpeg"
+    },
+    {
+        id: 728,
+        name: "Sperm Queen",
+        status: "Dead",
+        species: "unknown",
+        type: "Super Sperm Monster",
+        gender: "Female",
+        image:"https://rickandmortyapi.com/api/character/avatar/728.jpeg"
+    }
+]
+
+// 2. Створити компонент який описує персонажа (властивості id,name,status,species,gender,image) з цього апі
+// https://rickandmortyapi.com/
+//     https://rickandmortyapi.com/api/character
+//         Створити 6 персонажів
 export default App;
